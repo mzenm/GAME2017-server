@@ -1,0 +1,7 @@
+option optimize_for = LITE_RUNTIME;
+message MsgName
+{
+	required int type = 1;  // 0 ×¢²á  1 µÇÂ¼
+	required string username = 2;
+	required string password = 3;
+}

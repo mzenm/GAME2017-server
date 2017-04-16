@@ -1,0 +1,6 @@
+option optimize_for = LITE_RUNTIME;
+message MsgName
+{
+	required int ret = 1;  // 0 1 2 бн
+	required string uid = 2;
+}
