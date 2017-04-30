@@ -1,0 +1,14 @@
+import "Dat_UserData.proto";
+
+package ProtoBuf;
+
+message C2S_RoleInit
+{
+	required string roleID = 1; //
+}
+message S2C_RoleInit
+{
+	required int32 ret = 1; // 
+	required DAT_UserData userData = 2; //初始化后的信息
+
+}

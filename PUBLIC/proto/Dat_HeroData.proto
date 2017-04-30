@@ -1,0 +1,12 @@
+import "Dat_General.proto";
+
+package ProtoBuf;  
+
+message DAT_HeroData
+{
+	required string uid = 2;
+	required int32 lv = 3;
+	required int32 experience = 4;
+	repeated string heroUId = 5;
+	required DAT_ElementType elementType = 6;
+}

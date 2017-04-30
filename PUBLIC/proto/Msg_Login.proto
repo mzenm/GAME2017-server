@@ -1,0 +1,14 @@
+package ProtoBuf;  
+
+message C2S_Login
+{
+	required int32 type = 1;  // 0 ×¢²á  1 µÇÂ¼
+	required string username = 2;
+	required string password = 3;
+}
+message S2C_Login
+{
+	required int32 ret = 1;  // 0 1 2
+	required string uid = 2; //ÓÃ»§uid
+	required string code = 3; //¼ÓÃÜ×Ö¶Î
+}

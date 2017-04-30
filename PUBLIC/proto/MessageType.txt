@@ -1,12 +1,16 @@
-S2C_Login = 1;
+C2S_Login = 1001;
+C2S_UserData = 1002;
+C2S_RoleInit = 1003;
+C2S_NewHero = 1004;
 
 
 
 
 
 
+//------------
 
-
-// ！！！！
-
-S2C_Login = 1;
+S2C_Login = 2001;
+S2C_UserData = 2002;
+S2C_RoleInit = 2003;
+S2C_NewHero = 2004;
