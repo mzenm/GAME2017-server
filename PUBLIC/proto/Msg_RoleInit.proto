@@ -1,6 +1,7 @@
+syntax = "proto2";
 import "Dat_UserData.proto";
 
-package ProtoBuf;
+package cn.wzj.netty.proto;
 
 message C2S_RoleInit
 {
@@ -8,7 +9,7 @@ message C2S_RoleInit
 }
 message S2C_RoleInit
 {
-	required int32 ret = 1; // 
-	required DAT_UserData userData = 2; //³õÊ¼»¯ºóµÄÐÅÏ¢
+	required int32 ret = 1; //
+	required DAT_UserData userData = 2; //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
 }

@@ -1,15 +1,15 @@
+syntax = "proto2";
 import "Dat_UserData.proto";
-
-package ProtoBuf;
+package cn.wzj.netty.proto;
 
 message C2S_UserData
 {
-	required string uid = 1;  // ÓÃ»§uid
-	required string code = 2;  // ÓÃÀ´Ğ£ÑéµÄÃÜÂë
+	required string uid = 1;  // ï¿½Ã»ï¿½uid
+	required string code = 2;  // ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }
 message S2C_UserData
 {
 	required int32 ret = 1;
-	required bool newUser = 2; // ÊÇ·ñĞÂÓÃ»§
-	required DAT_UserData userData = 3; //Íæ¼ÒµÄĞÅÏ¢
+	required bool newUser = 2; // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
+	required DAT_UserData userData = 3; //ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ï¢
 }

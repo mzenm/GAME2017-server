@@ -1,5 +1,5 @@
-package ProtoBuf;  
-
+syntax = "proto2";
+package cn.wzj.netty.proto;
 message DAT_ElementProperty
 {
 	required int32 air = 1;

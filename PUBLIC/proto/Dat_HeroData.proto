@@ -1,12 +1,23 @@
+syntax = "proto2";
 import "Dat_General.proto";
-
-package ProtoBuf;  
+package cn.wzj.netty.proto;
 
 message DAT_HeroData
 {
-	required string uid = 2;
-	required int32 lv = 3;
-	required int32 experience = 4;
-	repeated string heroUId = 5;
-	required DAT_ElementType elementType = 6;
+	required string uid = 1; // Ψһid �������ݿ���¼
+	required string id = 2; // Ӣ��id ���ڿͻ���ʶ��Ӣ����Դ
+	required int32 lv = 3;  // �ȼ�
+	required int32 experience = 4;  // ����
+	required DAT_ElementType elementType = 5;  // Ԫ������
+	required int32 physicalAttack = 6; // ��������
+	required int32 physicalDefence = 7; // ��������
+	required int32 magicalAttack = 8; // ħ������
+	required int32 magicalDefence = 9; // ħ������
+	required int32 absoluteAttack = 10; // ���Թ���
+	required int32 speed = 11; // �ж��ٶ�
+	required int32 move = 12; // �ƶ�������
+	required int32 attackRange = 13; //������Χ
+	required int32 hp = 14; // ����ֵ
+	repeated string skills = 15; // Ӣ�۵ļ����б�
+
 }

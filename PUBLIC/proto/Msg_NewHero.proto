@@ -1,7 +1,7 @@
+syntax = "proto2";
 import "Dat_General.proto";
 import "Dat_HeroData.proto";
-
-package ProtoBuf;  
+package cn.wzj.netty.proto;
 
 message C2S_NewHero
 {

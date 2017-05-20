@@ -1,25 +1,26 @@
+syntax = "proto2";
 import "Dat_General.proto";
-import "Dat_HeroData.proto";
-
-package ProtoBuf;  
+package cn.wzj.netty.proto;
 
 message DAT_UserData
 {
-	required string uid = 1; // Íæ¼ÒUID
-	required string nickname = 2; // Íæ¼ÒêÇ³Æ
-	required int32 lv = 3; // Íæ¼ÒµÈ¼¶
-	required int32 experience = 4; // ¾­ÑéÖµ
-	required int32 roleId = 5; // Íæ¼Ò½ÇÉ«id
+	required string uid = 1; // ï¿½ï¿½ï¿½ï¿½UID
+	required string nickname = 2; // ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½
+	required int32 lv = 3; // ï¿½ï¿½ï¿½ÒµÈ¼ï¿½
+	required int32 experience = 4; // ï¿½ï¿½ï¿½ï¿½Öµ
+	required string roleId = 5; // ï¿½ï¿½ï¿½Ò½ï¿½É«id
 
-	required int32 strength = 6; // Á¦Á¿ÊôÐÔ
-	required int32 magic = 7; // Ä§·¨ÊôÐÔ
-	required int32 agility = 8; // Ãô½Ý¶È
-	required DAT_ElementProperty elementProperty = 9; // Íæ¼ÒÔªËØÊôÐÔ
+	required int32 strength = 6; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	required int32 magic = 7; // Ä§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	required int32 agility = 8; // ï¿½ï¿½ï¿½Ý¶ï¿½
+	required DAT_ElementProperty elementProperty = 9; // ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	repeated DAT_HeroData heroes = 10; // Íæ¼ÒÓµÓÐµÄËùÓÐÓ¢ÐÛ
+	repeated string heroes = 10; // ï¿½ï¿½ï¿½ï¿½Óµï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½
 
-	required int32 gold = 11; // Íæ¼ÒÓÐµÄ½ð±Ò
-	required int32 gem = 12; // Íæ¼ÒÓÐµÄ×êÊ¯
+	repeated string teams = 11; // ï¿½ï¿½ï¿½ÒµÄ¶ï¿½ï¿½ï¿½
 
-	required DAT_ElementProperty keys = 13; // Íæ¼ÒµÄÔ¿³×
+	required int32 gold = 12; // ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ½ï¿½ï¿½ï¿½
+	required int32 gem = 13; // ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ê¯
+
+	required DAT_ElementProperty keys = 14; // ï¿½ï¿½ï¿½Òµï¿½Ô¿ï¿½ï¿½
 }
